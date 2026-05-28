@@ -140,8 +140,7 @@
 }
 .logo{
     /* border: 1px solid darkblue; */
-    background-image: url(../assets/Gemini_Generated_Image_h6k6sdh6k6sdh6k6\ \(1\)\ \(2\).png);
-       background-size: contain;
+    background-image: url(../assets/logo.png);       background-size: contain;
     background-repeat: no-repeat;
     height: 120px;
     width: 220px;
