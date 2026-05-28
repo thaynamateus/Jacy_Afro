@@ -1,0 +1,194 @@
+.wrapperPagina {
+  width: 800px;
+  margin: 20px auto;
+  font-family: sans-serif;
+  padding: 0 15px;
+}
+
+.containerData {
+  background-color: #fcece5;
+  border: 3px solid #eed4a7;
+  min-height: 400px;
+  width: 800px;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+}
+
+.containerData h3 {
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 22px;
+  font-size: 22px;
+}
+
+.conteudo {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+/* ── Calendário ── */
+.calendario {
+  background-color: #ffffff;
+  border: 2px solid #eed4a7;
+  border-radius: 12px;
+  padding: 16px;
+  width: 320px;
+  flex-shrink: 0;
+}
+
+.nomeMes {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 12px;
+  text-transform: capitalize;
+}
+
+.gridDias {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  text-align: center;
+}
+
+.diaSemana {
+  font-size: 12px;
+  font-weight: 600;
+  color: #b09189;
+  padding: 4px 0;
+}
+
+.dia {
+  font-size: 13px;
+  padding: 6px 4px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #333;
+  transition: all 0.15s ease;
+}
+
+.dia:hover:not(.diaPassado) {
+  background-color: #fcece5;
+}
+
+.diaSelecionado {
+  background-color: #c4a49c !important;
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+.diaPassado {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+/* ── Horários ── */
+.gridHorarios {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  flex: 1;
+}
+
+.cardHorario {
+  background-color: #ffffff;
+  border: 2px solid #eed4a7;
+  border-radius: 10px;
+  padding: 14px 10px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  transition: all 0.2s ease;
+}
+
+.cardHorario:hover {
+  background-color: #fffbf9;
+  border-color: #c4a49c;
+}
+
+.cardSelecionado {
+  border: 3px solid #c4a49c !important;
+  background-color: #fff5ed !important;
+  font-weight: 600;
+  color: #000;
+}
+
+/* ── Barra e botões (igual às outras telas) ── */
+.barraPreco {
+  background-color: #c4a49c;
+  border-radius: 12px;
+  padding: 18px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  width: 800px;
+  box-sizing: border-box;
+  color: white;
+}
+
+.barraPreco h4 { font-size: 18px; margin: 0; font-weight: 400; }
+.barraPreco h5 { font-size: 18px; margin: 0; font-weight: 600; }
+
+.containerBotoes {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  width: 800px;
+}
+
+.botaoProximo {
+  background-color: #c4a49c;
+  color: white;
+  text-decoration: none;
+  padding: 12px 35px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+}
+
+.botaoProximo:hover:not(.botaoDesabilitado) { background-color: #b09189; }
+
+.botaoVoltar {
+  background-color: transparent;
+  color: #c4a49c;
+  border: 2px solid #c4a49c;
+  text-decoration: none;
+  padding: 10px 35px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+.botaoVoltar:hover {
+  background-color: #fcece5;
+  color: #b09189;
+  border-color: #b09189;
+}
+
+.botaoDesabilitado {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.diaOcupado {
+  background-color: #f0c4c4;
+  color: #a05050;
+  cursor: not-allowed;
+  border-radius: 6px;
+}
+
+.cardOcupado {
+  background-color: #f0c4c4;
+  border-color: #e0a0a0 !important;
+  color: #a05050;
+  cursor: not-allowed;
+}

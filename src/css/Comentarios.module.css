@@ -1,0 +1,177 @@
+.secao {
+    width: 1400px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.secao h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.caixa_escrever {
+    background-color: rgb(250, 224, 218);
+    border-radius: 16px;
+    width: 900px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    /* border: 1px solid slateblue; */
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    /* border: 1px solid rgb(205, 128, 90); */
+}
+
+.foto_perfil {
+    /* border: 1px solid rgb(11, 6, 46); */
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.icone_perfil {
+    /* border: 1px solid rgb(8, 8, 11); */
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    font-size: 15px;
+}
+
+.input_escondido {
+    display: none;
+}
+
+.campo_nome {
+    /* border: 1px solid rgb(205, 90, 90); */
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #c4a882;
+    font-size: 14px;
+    padding: 4px 8px;
+    outline: none;
+    font-family: inherit;
+    width: 160px;
+}
+
+.notas span {
+    /* border: 1px solid slateblue; */
+    font-size: 26px;
+    cursor: pointer;
+    color: #E1C16E;
+}
+
+.nota_vazia { opacity: 0.4; }
+.nota_cheia { opacity: 1; }
+
+.campo_texto {
+    /* border: 1px solid slateblue; */
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    color: #555;
+    resize: none;
+    height: 60px;
+    outline: none;
+    font-family: inherit;
+}
+
+.botao_upload {
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 15px;
+    color: #7a5c44;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.botao_upload:hover { opacity: 0.7; }
+
+.preview {
+    position: relative;
+    width: fit-content;
+}
+
+.preview img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #E1C16E;
+}
+
+.preview span {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #7a5c44;
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.botao_publicar {
+    background-color: #EED4A7;
+    border: none;
+    border-radius: 20px;
+    height: 36px;
+    width: 120px;
+    font-size: 16px;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.botao_publicar:hover { opacity: 0.85; }
+
+.lista {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);;
+    gap: 16px;
+    width: 1200px;
+}
+
+.caixa_comentario {
+    background-color: rgb(250, 224, 218);
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.notas_fixas {
+    font-size: 16px;
+    color: #E1C16E;
+}
+
+.foto_postada {
+    width: 100%;
+    max-height: 220px;
+    object-fit: contain;
+}

@@ -1,0 +1,190 @@
+.conteiner_banner {
+    margin-top: 40px;
+    border: 3px solid #E1C16E;
+    height: 402px;
+    display: flex;
+    width: 1400px;
+
+}
+
+.parte1 {
+    border: 2px solid #E1C16E;
+    width: 55%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 36px;
+    justify-content: center;
+    background-color: rgb(250, 224, 218);
+    justify-content: center;
+}
+
+.parte1 h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 60px;
+    width: 500px;
+    text-align: center;
+}
+
+.parte1 h3 {
+    font-size: 22px;
+    width: 390px;
+    text-align: center;
+}
+
+.parte1 a {
+    background-color: #EED4A7;
+    height: 30px;
+    width: 169px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.parte2 {
+    background-image: url(../assets/Rectangle\ 18.png);
+    background-size: cover;
+    background-position: center 10%;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 45%;
+}
+ 
+/* carrocel das fotos  */
+.produtos {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.conteiner_produtos {
+    display: flex;
+    gap: 10px;
+    width: max-content;
+    animation: girar 35s linear infinite;
+}
+
+@keyframes girar {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+}
+.conteiner_produtos:hover,
+.conteiner_produtos:active {
+    animation-play-state: paused;
+}
+
+.conteiner_produtos img {
+    border: 2px solid #E1C16E;
+    border-radius: 10px;
+    width: 220px;
+    height: 340px;
+    object-fit: cover;
+}
+
+.card_produto {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    border-radius: 8px;
+}
+
+.card_produto img {
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.card_produto:hover img {
+    transform: scale(1.05);
+}
+
+.efeito {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(250, 224, 218, 0.75);
+    padding: 12px 16px;
+    transform: translateY(100%);
+    transition: transform 1s ease;
+}
+
+.card_produto:hover .efeito {
+    transform: translateY(0);
+}
+
+.efeito span {
+    font-family: 'Playfair Display', serif;
+    color: #000000;
+    font-size: 19px;
+    font-weight: 500;
+}
+/* sobre a cyra */
+.sobre {
+    padding: 50px;
+    margin-top: 40px;
+    width: auto;
+    height: auto;
+    border: 2px solid #E1C16E;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.foto {
+    border: 1px solid violet;
+    width: 400px;
+    height: 500px;
+    background-image: url(../assets/cyra.png);
+    background-size: cover;
+    background-position: center 0%;
+    background-repeat: no-repeat;
+    border: 2px solid #E1C16E;
+    border-radius: 20px;
+}
+
+.texto {
+    /* border: 1px solid blue; */
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 700px;
+    gap: 50px;
+}
+
+.texto h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 36px;
+}
+
+.texto p {
+    font-size: 19px;
+    text-align: center;
+    width: 550px;
+}
+
+.area_rede {
+    height: 60PX;
+    width: 125px;
+    /* border: 1px solid seagreen; */
+    display: flex;
+    flex-direction: row;
+}
+
+.area_rede img {
+    width: 100%;
+    height: 100%;
+}
+

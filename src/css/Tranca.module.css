@@ -1,0 +1,101 @@
+
+.wrapperPagina {
+    /* border: 1px solid fuchsia; */
+  max-width: auto;
+  margin: 20px auto;
+  font-family: sans-serif;
+  padding: 0 15px;
+}
+
+.containerTrancas {
+  background-color: #fcece5; 
+  border: 3px solid #eed4a7; 
+  height: 500px; 
+  width: 800px;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 25px; 
+}
+
+.containerTrancas h3 {
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 22px;
+}
+
+.gridTrancas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+.cardTranca {
+  background-color: #ffffff;
+  border: 2px solid #eed4a7; 
+  height: 80px;
+  border-radius: 15px;
+  padding: 18px 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cardTranca h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+  font-weight: 400;
+}
+
+.cardSelecionado {
+  border: 2px solid #eed4a7; 
+  background-color: #fff9f6;
+}
+
+.barraPreco {
+  background-color: #c4a49c; 
+  border-radius: 12px; 
+  padding: 18px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  color: white;
+}
+
+.barraPreco h4 {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 400;
+}
+
+.barraPreco h5 {
+  font-size: 15px;
+  margin: 0;
+  font-weight: 600;
+}
+
+
+.containerBotao {
+  display: flex;
+  justify-content: flex-start; 
+}
+
+
+.botaoProximo {
+  background-color: #c4a49c;
+  color: white;
+  text-decoration: none;
+  padding: 12px 35px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.botaoProximo:hover:not(.botaoDesabilitado) {
+  background-color: #b09189;
+}
+
+.botaoDesabilitado {
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+}

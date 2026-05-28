@@ -1,0 +1,107 @@
+.wrapperPagina {
+  width: 800px;
+  margin: 20px auto;
+  font-family: sans-serif;
+  padding: 0 15px;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 25px;
+  color: #000000;
+  text-decoration: underline;
+}
+
+.containerResumo {
+  background-color: #fcece5;
+  border: 3px solid #eed4a7;
+  width: 800px;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+}
+
+.linhaServico {
+  display: flex;
+  gap: 30px;
+  font-size: 16px;
+  color: #000000;
+  padding-bottom: 20px;
+}
+
+.separador {
+  height: 1px;
+  background-color: #eed4a7;
+  margin: 4px 0;
+}
+
+.infoItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px 0;
+}
+
+.infoLabel {
+  font-size: 14px;
+  color: #201f1f;
+  font-weight: 400;
+}
+
+.infoValor {
+  font-size: 16px;
+  color: #000000;
+  font-weight: 500;
+}
+
+.containerBotao {
+  display: flex;
+  justify-content: flex-end;
+  width: 800px;
+}
+
+.botaoAgenda {
+  background-color: transparent;
+  color: #000000;
+  border: 2px solid #eed4a7;
+  text-decoration: none;
+  padding: 10px 35px;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+.botaoAgenda:hover {
+  background-color: #fcece5;
+  border-color: #c4a49c;
+  color: #000000;
+}
+
+.containerBotao {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  width: 800px;
+}
+
+.botaoVoltar {
+  background-color: transparent;
+  color: #000000;
+  border: 2px solid #c4a49c;
+  text-decoration: none;
+  padding: 10px 35px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+.botaoVoltar:hover {
+  background-color: #fcece5;
+  color: #000000;
+  border-color: #b09189;
+}
