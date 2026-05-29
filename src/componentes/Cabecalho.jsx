@@ -1,17 +1,18 @@
 import { useNavigate } from 'react-router-dom'; 
-import perfil from "../assets/perfil.svg"
+import perfilIcon from "../assets/perfil.svg"
 import style from "../css/Cabecalho.module.css"
 
 function Cabecalho({ usuarioLogado }) {
-    const navigate = useNavigate(); 
-    
+    const navigate = useNavigate();
+
+    const dadosUsuario = JSON.parse(localStorage.getItem("dadosUsuario") || "{}")
+    const fotoPerfil = dadosUsuario.foto || perfilIcon
+
     const verificarAcesso = (e, destino) => {
         e.preventDefault();
-        
         if (usuarioLogado) {
             navigate(destino); 
         } else {
-            // Se não estiver logado, sempre manda para a tela de cadastro/login
             navigate("/perfil"); 
         } 
     };
@@ -25,9 +26,13 @@ function Cabecalho({ usuarioLogado }) {
                 
                 <div className={style.info_home}>
                     <div className={style.icons}>
-                    
-                        <a href="#" onClick={(e) => verificarAcesso(e, "/usuario")}>
-                            <img src={perfil} alt="Perfil" className={style.perfil} />
+                        <a href="#" onClick={(e) => verificarAcesso(e,)}>
+                            <img
+                                src={fotoPerfil}
+                                alt="Perfil"
+                                className={style.perfil}
+                                style={{ borderRadius: '50%', objectFit: 'cover' }}
+                            />
                         </a>
                     </div>
                     
@@ -36,9 +41,8 @@ function Cabecalho({ usuarioLogado }) {
                         <a href="/Agendar" onClick={(e) => verificarAcesso(e, "/Agendar")}>
                             Agendar
                         </a>
+                        <a href="/galeria">Galeria</a>
                         
-                        <a href="#">Galeria</a>
-                        <a href="/sobre">sobre</a>
                     </nav>
                 </div>
             </div>

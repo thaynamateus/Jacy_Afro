@@ -16,6 +16,7 @@ import insta1 from "../assets/insta1.svg"
 import face1 from "../assets/face1.svg"
 import whats1 from "../assets/whats1.svg"
 import Comentario from "./Comentario"
+import Galeria from './Galeria';
 
 function Home({ usuarioLogado }) {
     const navigate = useNavigate();
@@ -47,92 +48,92 @@ function Home({ usuarioLogado }) {
             <section className={style.produtos}>
                 <div className={style.conteiner_produtos}>
 
-                    <a href="/agenda" className={style.card_produto}>
+                    <a href="/galeria" className={style.card_produto}>
                         <img src={boxeadora} alt="boxeadora" />
                         <div className={style.efeito}><span>Boxeadora</span></div>
                     </a>
-                    <a href="/agenda" className={style.card_produto}>
+                    <a href="/galeria" className={style.card_produto}>
                         <img src={rabo} alt="rabo" />
                         <div className={style.efeito}><span>Ponytail Braids</span></div>
                     </a>
-                    <a href="/agenda" className={style.card_produto}>
+                    <a href="/galeria" className={style.card_produto}>
                         <img src={braids} alt="braids" />
                         <div className={style.efeito}><span>Box Braids</span></div>
                     </a>
-                    <a href="/agenda" className={style.card_produto}>
+                    <a href="/galeria" className={style.card_produto}>
                         <img src={chanel} alt="chanel" />
                         <div className={style.efeito}><span>Chanel</span></div>
                     </a>
-                    <a href="/agenda" className={style.card_produto}>
+                    <a href="/galeria" className={style.card_produto}>
                         <img src={nago} alt="nago" />
                         <div className={style.efeito}><span>Nagô</span></div>
                     </a>
-                    <a href="/agenda" className={style.card_produto}>
+                    <a href="/galeria" className={style.card_produto}>
                         <img src={croche} alt="croche" />
                         <div className={style.efeito}><span>Croche Braids</span></div>
                     </a>
-                    <a href="/agenda" className={style.card_produto}>
+                    <a href="/galeria" className={style.card_produto}>
                         <img src={boxeadora1} alt="boxeadora1" />
                         <div className={style.efeito}><span>Boxeadora</span></div>
                     </a>
-                    <a href="/agenda" className={style.card_produto}>
+                    <a href="/galeria" className={style.card_produto}>
                         <img src={masculino} alt="masculino" />
                         <div className={style.efeito}><span>Chanel Masculino</span></div>
                     </a>
-                    <a href="/agenda" className={style.card_produto}>
+                    <a href="/galeria" className={style.card_produto}>
                         <img src={coroa} alt="coroa" />
                         <div className={style.efeito}><span>Tiara</span></div>
                     </a>
-                    <a href="/agenda" className={style.card_produto}>
+                    <a href="/galeria" className={style.card_produto}>
                         <img src={micangas} alt="micangas" />
                         <div className={style.efeito}><span>Tranças com Miçangas</span></div>
                     </a>
-                    <a href="/agenda" className={style.card_produto}>
+                    <a href="/galeria" className={style.card_produto}>
                         <img src={box} alt="box" />
                         <div className={style.efeito}><span>Gypsy braids</span></div>
                     </a>
 
-                    <a href="/agenda" className={style.card_produto}>
+                    <a href="/galeria" className={style.card_produto}>
                         <img src={boxeadora} alt="boxeadora" />
                         <div className={style.efeito}><span>Boxeadora</span></div>
                     </a>
-                    <a href="/agenda" className={style.card_produto}>
+                    <a href="/galeria" className={style.card_produto}>
                         <img src={rabo} alt="rabo" />
                         <div className={style.efeito}><span>Ponytail Braids</span></div>
                     </a>
-                    <a href="/agenda" className={style.card_produto}>
+                    <a href="/galeria" className={style.card_produto}>
                         <img src={braids} alt="braids" />
                         <div className={style.efeito}><span> Box Braids</span></div>
                     </a>
-                    <a href="/agenda" className={style.card_produto}>
+                    <a href="/galeria" className={style.card_produto}>
                         <img src={chanel} alt="chanel" />
                         <div className={style.efeito}><span>Chanel</span></div>
                     </a>
-                    <a href="/agenda" className={style.card_produto}>
+                    <a href="/galeria" className={style.card_produto}>
                         <img src={nago} alt="nago" />
                         <div className={style.efeito}><span>Nagô</span></div>
                     </a>
-                    <a href="/agenda" className={style.card_produto}>
+                    <a href="/galeria" className={style.card_produto}>
                         <img src={croche} alt="croche" />
                         <div className={style.efeito}><span>Croche Braids</span></div>
                     </a>
-                    <a href="/agenda" className={style.card_produto}>
+                    <a href="/galeria" className={style.card_produto}>
                         <img src={boxeadora1} alt="boxeadora1" />
                         <div className={style.efeito}><span>Boxeadora</span></div>
                     </a>
-                    <a href="/agenda" className={style.card_produto}>
+                    <a href="/galeria" className={style.card_produto}>
                         <img src={masculino} alt="masculino" />
                         <div className={style.efeito}><span>Chanel Masculino</span></div>
                     </a>
-                    <a href="/agenda" className={style.card_produto}>
+                    <a href="/galeria" className={style.card_produto}>
                         <img src={coroa} alt="coroa" />
                         <div className={style.efeito}><span>Tiara</span></div>
                     </a>
-                    <a href="/agenda" className={style.card_produto}>
+                    <a href="/galeria" className={style.card_produto}>
                         <img src={micangas} alt="micangas" />
                         <div className={style.efeito}><span>Tranças com Miçangas</span></div>
                     </a>
-                    <a href="/agenda" className={style.card_produto}>
+                    <a href="/galeria" className={style.card_produto}>
                         <img src={box} alt="box" />
                         <div className={style.efeito}><span>Gypsy braids</span></div>
                     </a>

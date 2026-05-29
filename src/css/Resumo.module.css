@@ -1,10 +1,3 @@
-.wrapperPagina {
-  width: 800px;
-  margin: 20px auto;
-  font-family: sans-serif;
-  padding: 0 15px;
-}
-
 .titulo {
   text-align: center;
   font-size: 28px;
@@ -14,94 +7,254 @@
   text-decoration: underline;
 }
 
-.containerResumo {
-  background-color: #fcece5;
-  border: 3px solid #eed4a7;
-  width: 800px;
-  border-radius: 12px;
-  padding: 30px;
+.procurando {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
   margin-bottom: 25px;
-  box-sizing: border-box;
 }
 
-.linhaServico {
+.filtro {
   display: flex;
-  gap: 30px;
-  font-size: 16px;
-  color: #000000;
-  padding-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 8px;
+  flex: 1;
 }
 
-.separador {
-  height: 1px;
-  background-color: #eed4a7;
-  margin: 4px 0;
-}
-
-.infoItem {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  padding: 16px 0;
-}
-
-.infoLabel {
-  font-size: 14px;
-  color: #201f1f;
-  font-weight: 400;
-}
-
-.infoValor {
-  font-size: 16px;
-  color: #000000;
-  font-weight: 500;
-}
-
-.containerBotao {
-  display: flex;
-  justify-content: flex-end;
-  width: 800px;
-}
-
-.botaoAgenda {
+.botao_filtro {
   background-color: transparent;
   color: #000000;
   border: 2px solid #eed4a7;
-  text-decoration: none;
-  padding: 10px 35px;
+  padding: 6px 18px;
   border-radius: 8px;
+  font-size: 14px;
   font-weight: 400;
-  font-size: 16px;
+  cursor: pointer;
   transition: all 0.2s ease;
+  white-space: nowrap;
 }
 
-.botaoAgenda:hover {
+.botao_filtro:hover {
+  background-color: #fcece5;
+  border-color: #c4a49c;
+}
+
+.botao_filtro.ativo {
   background-color: #fcece5;
   border-color: #c4a49c;
   color: #000000;
 }
 
-.containerBotao {
+.ulpgald_imagem {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.btn_upload {
+  background-color: transparent;
+  color: #000000;
+  border: 2px solid #eed4a7;
+  padding: 10px 35px;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.btn_upload:hover {
+  background-color: #fcece5;
+  border-color: #c4a49c;
+}
+
+.conteiners_galeria {
+  width: 100%;
+}
+
+.conteiner_produtos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.vazio {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #c4a49c;
+  padding: 40px 0;
+  font-size: 16px;
+}
+
+.card_produto {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 2px solid #eed4a7;
+  width: 100%;
+  height: 280px;
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+  transition: border-color 0.2s ease;
+}
+
+.card_produto:hover {
+  border-color: #c4a49c;
+}
+
+.card_produto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.card_produto:hover img {
+  transform: scale(1.05);
+}
+
+.efeito {
+  position: absolute;
+  inset: 0;
+  background: rgba(252, 236, 229, 0.75);
+  display: flex;
+  align-items: flex-end;
+  padding: 14px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card_produto:hover .efeito {
+  opacity: 1;
+}
+
+.efeito span {
+  color: #000000;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.modal_fundo {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 16px;
+}
+
+.modal {
+  background: #fff;
+  border: 3px solid #eed4a7;
+  border-radius: 12px;
+  padding: 30px;
+  width: 480px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.modal_titulo {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  color: #000000;
+  margin: 0 0 20px;
+  text-decoration: underline;
+}
+
+.preview_wrapper {
+  width: 100%;
+  height: 260px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border: 2px solid #eed4a7;
+}
+
+.preview_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lista_categorias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 25px;
+}
+
+.botao_categoria {
+  background-color: transparent;
+  border: 2px solid #eed4a7;
+  color: #000000;
+  padding: 6px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.botao_categoria:hover {
+  background-color: #fcece5;
+  border-color: #c4a49c;
+}
+
+.botao_categoria.categoria_ativa {
+  background-color: #fcece5;
+  border-color: #c4a49c;
+  color: #000000;
+}
+
+.modal_acoes {
   display: flex;
   justify-content: flex-end;
   gap: 15px;
-  width: 800px;
 }
 
-.botaoVoltar {
+.btn_cancelar {
   background-color: transparent;
   color: #000000;
   border: 2px solid #c4a49c;
-  text-decoration: none;
   padding: 10px 35px;
   border-radius: 8px;
   font-weight: 500;
   font-size: 16px;
+  cursor: pointer;
   transition: all 0.2s ease;
 }
 
-.botaoVoltar:hover {
+.btn_cancelar:hover {
   background-color: #fcece5;
-  color: #000000;
   border-color: #b09189;
+}
+
+.btn_confirmar {
+  background-color: transparent;
+  color: #000000;
+  border: 2px solid #eed4a7;
+  padding: 10px 35px;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn_confirmar:hover:not(:disabled) {
+  background-color: #fcece5;
+  border-color: #c4a49c;
+}
+
+.btn_confirmar:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
 }

@@ -140,7 +140,8 @@
 }
 .logo{
     /* border: 1px solid darkblue; */
-    background-image: url(../assets/logo.png);       background-size: contain;
+    background-image: url(../assets/logo.png); 
+    background-size: contain;
     background-repeat: no-repeat;
     height: 120px;
     width: 220px;
