@@ -1,6 +1,5 @@
 import { useState, useRef } from "react";
 import style from "../css/Galeria.module.css";
- 
 import boxeadora from "../assets/boxeadora.jpg"
 import chanel from "../assets/chanel.png"
 import rabo from "../assets/rabo.png"
