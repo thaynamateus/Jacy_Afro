@@ -1,0 +1,180 @@
+.Footer {
+    height: 540px;
+    background-color: #564747;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.logo {
+    height: 220px;
+    width: 300px;
+    background-image: url(../assets/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+margin-left: 100px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+.fala_gente {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: aliceblue;
+    width: 280px;
+}
+
+.fala_gente h3 {
+    font-size: 22px;
+    margin: 0 0 6px 0;
+}
+
+.fala_gente h5 {
+    font-size: 16px;
+    margin: 0;
+    font-weight: normal;
+}
+
+.redes {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.redes img {
+    width: 22px;
+    height: 22px;
+}
+
+.nossas_redes h5 {
+    color: aliceblue;
+    font-size: 16px;
+    margin: 10px 0 6px 0;
+    font-weight: normal;
+}
+
+.area_rede {
+    display: flex;
+    gap: 10px;
+}
+
+.area_rede img {
+    width: 36px;
+    height: 36px;
+}
+
+.botom_rapido {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 10px;
+}
+
+.botom_rapido a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.botom_rapido a:hover {
+    text-decoration: underline;
+}
+
+.pagamentos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: aliceblue;
+    width: 280px;
+    margin-top: -120px;
+}
+
+.pagamentos h4 {
+    font-size: 18px;
+    margin: 0 0 6px 0;
+}
+
+.cartoes {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.cartoes img {
+    width: 80px;
+    height: auto;
+}
+
+.mapa {
+    width: 350px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 280px;
+    border: 0;
+    display: block;
+}
+
+@media (max-width: 768px) {
+
+    .Footer {
+        height: auto;
+        padding: 20px;
+    }
+
+    .logo {
+        height: 130px;
+        width: 180px;
+        margin: 0 auto 20px auto;
+        display: block;
+    }
+
+    .info {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .fala_gente {
+        width: 100%;
+    }
+
+    .botom_rapido {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 0;
+    }
+
+    .pagamentos {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .cartoes {
+        flex-wrap: nowrap;
+        gap: 6px;
+    }
+
+    .cartoes img {
+        width: 45px;   
+        height: auto;
+    }
+
+    .mapa {
+        width: 100%;
+    }
+
+    .mapa iframe {
+        height: 200px;
+    }
+}

@@ -8,11 +8,11 @@ import Cor from "./componentes/Cor"
 import Data from "./componentes/Data"
 import Pagamento from "./componentes/Pagamento"
 import Resumo from "./componentes/Resumo"
-
 import Perfil from "./componentes/Perfil"
 import Cabecalho from "./componentes/Cabecalho"
 import Galeria from './componentes/Galeria'
 import './App.css'
+import Footer from './componentes/Footer'
 
 function App() {
 
@@ -45,6 +45,7 @@ function App() {
               <Perfil setUsuarioLogado={handleSetUsuarioLogado} usuarioLogado={usuarioLogado} />
             } />
           </Routes>
+          <Footer usuarioLogado={usuarioLogado} />
         </Router>
       </main>
     </>

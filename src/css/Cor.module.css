@@ -174,3 +174,70 @@
   text-align: center;
   margin-top: 50px;
 }
+
+@media (max-width: 768px) {
+
+    .wrapperPagina {
+        width: 100%;
+        padding: 0 12px;
+        box-sizing: border-box;
+    }
+
+    .containerCores {
+        width: 100%;
+        min-height: auto;
+        padding: 16px;
+    }
+
+    .containerCores h3 {
+        font-size: 18px;
+    }
+
+    .gridCores {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .cardCor {
+        height: 60px;
+        padding: 12px 10px;
+        gap: 10px;
+    }
+
+    .cardCor span {
+        font-size: 15px;
+    }
+
+    .bolinha {
+        width: 30px;
+        height: 30px;
+    }
+
+    .botaoMaterial {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .barraPreco {
+        width: 100%;
+        padding: 14px 18px;
+    }
+
+    .barraPreco h4,
+    .barraPreco h5 {
+        font-size: 15px;
+    }
+
+    .containerBotoes {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .botaoProximo,
+    .botaoVoltar {
+        flex: 1;
+        text-align: center;
+        padding: 12px 10px;
+        font-size: 15px;
+    }
+}

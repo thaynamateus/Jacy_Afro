@@ -116,3 +116,52 @@
   cursor: not-allowed;
   pointer-events: none;
 }
+
+@media (max-width: 768px) {
+
+    .wrapperPagina {
+        width: 100%;
+        padding: 0 12px;
+        box-sizing: border-box;
+    }
+
+    .barraPreco {
+        width: 100%;
+        padding: 14px 18px;
+    }
+
+    .barraPreco h4,
+    .barraPreco h5 {
+        font-size: 15px;
+    }
+
+    .containerPagamento {
+        width: 100%;
+        padding: 16px;
+    }
+
+    .containerPagamento h3 {
+        font-size: 18px;
+    }
+
+    .cardPagamento {
+        padding: 14px 16px;
+        gap: 10px;
+    }
+
+    .labelPagamento {
+        font-size: 15px;
+    }
+
+    .containerBotao {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .botaoFinalizar {
+        width: 100%;
+        text-align: center;
+        padding: 14px;
+        font-size: 16px;
+    }
+}

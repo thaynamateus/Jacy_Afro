@@ -11,7 +11,8 @@ import coroa from "../assets/coroa.png"
 import masculino from "../assets/masculino.png"
 import micangas from "../assets/micangas.png"
 import boxeadora1 from "../assets/boxeadora1.png"
- 
+import Comentario from "./Comentario"
+
 const listaTrancas = [
     "Box Braids",
     "Boxeadora",
@@ -23,7 +24,7 @@ const listaTrancas = [
     "Tranças com Miçangas",
     "Chanel",
 ];
- 
+
 const fotosIniciais = [
     { id: 1, src: boxeadora, nome: "Boxeadora", categoria: "Boxeadora" },
     { id: 2, src: rabo, nome: "Ponytail Braids", categoria: "Ponytail Braids" },
@@ -36,7 +37,7 @@ const fotosIniciais = [
     { id: 10, src: micangas, nome: "Tranças com Miçangas", categoria: "Tranças com Miçangas" },
     { id: 11, src: box, nome: "Gypsy Braids", categoria: "Gypsy Braids" },
 ];
- 
+
 function Galeria() {
     const [filtroAtivo, setFiltroAtivo] = useState("Todos");
     const [fotos, setFotos] = useState(fotosIniciais);
@@ -44,14 +45,14 @@ function Galeria() {
     const [imagemPendente, setImagemPendente] = useState(null);
     const [categoriaEscolhida, setCategoriaEscolhida] = useState("");
     const inputRef = useRef(null);
- 
+
     const categorias = ["Todos", ...listaTrancas];
- 
+
     const fotosFiltradas =
         filtroAtivo === "Todos"
             ? fotos
             : fotos.filter((f) => f.categoria === filtroAtivo);
- 
+
     function handleArquivoSelecionado(e) {
         const arquivo = e.target.files[0];
         if (!arquivo) return;
@@ -61,7 +62,7 @@ function Galeria() {
         setModalAberto(true);
         e.target.value = "";
     }
- 
+
     function confirmarUpload() {
         if (!categoriaEscolhida) return;
         setFotos((prev) => [
@@ -77,18 +78,18 @@ function Galeria() {
         setImagemPendente(null);
         setCategoriaEscolhida("");
     }
- 
+
     function cancelarUpload() {
         setModalAberto(false);
         setImagemPendente(null);
         setCategoriaEscolhida("");
     }
- 
+
     return (
         <>
             <section>
                 <h2 className={style.titulo}>Galeria de Trabalho</h2>
- 
+
                 <div className={style.procurando}>
                     <div className={style.filtro}>
                         {categorias.map((cat) => (
@@ -101,7 +102,7 @@ function Galeria() {
                             </button>
                         ))}
                     </div>
- 
+
                     <div className={style.ulpgald_imagem}>
                         <button
                             className={style.btn_upload}
@@ -118,7 +119,7 @@ function Galeria() {
                         />
                     </div>
                 </div>
- 
+
                 <div className={style.conteiners_galeria}>
                     <div className={style.conteiner_produtos}>
                         {fotosFiltradas.length === 0 ? (
@@ -138,16 +139,16 @@ function Galeria() {
                     </div>
                 </div>
             </section>
- 
+
             {modalAberto && (
                 <div className={style.modal_fundo} onClick={cancelarUpload}>
                     <div className={style.modal} onClick={(e) => e.stopPropagation()}>
                         <h3 className={style.modal_titulo}>Qual é o tipo de trança?</h3>
- 
+
                         <div className={style.preview_wrapper}>
                             <img src={imagemPendente} alt="Preview" className={style.preview_img} />
                         </div>
- 
+
                         <div className={style.lista_categorias}>
                             {listaTrancas.map((cat) => (
                                 <button
@@ -159,7 +160,7 @@ function Galeria() {
                                 </button>
                             ))}
                         </div>
- 
+
                         <div className={style.modal_acoes}>
                             <button className={style.btn_cancelar} onClick={cancelarUpload}>
                                 Cancelar
@@ -175,8 +176,10 @@ function Galeria() {
                     </div>
                 </div>
             )}
+
+            <Comentario />
         </>
     );
 }
- 
+
 export default Galeria;

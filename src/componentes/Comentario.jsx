@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import style from "../css/Comentarios.module.css"
 import perfilIcon from "../assets/perfil.svg"
+import Comentario from "./Comentario"
 
 function Comentarios() {
     const [comentarios, setComentarios] = useState([])
@@ -8,7 +9,6 @@ function Comentarios() {
     const [estrelas, setEstrelas] = useState(0)
     const [fotoComentario, setFotoComentario] = useState(null)
 
-    // Pega nome e foto do usuário logado
     const dadosUsuario = JSON.parse(localStorage.getItem("dadosUsuario") || "{}")
     const nome = dadosUsuario.nome || ""
     const foto = dadosUsuario.foto || null

@@ -99,3 +99,48 @@
   cursor: not-allowed;
   pointer-events: none;
 }
+@media (max-width: 768px) {
+
+    .containerTrancas {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .gridTrancas {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .cardTranca {
+        height: 60px;
+        padding: 12px 10px;
+    }
+
+    .cardTranca h4 {
+        font-size: 13px;
+    }
+
+    .barraPreco {
+        padding: 14px 18px;
+    }
+
+    .barraPreco h4 {
+        font-size: 15px;
+    }
+
+    .barraPreco h5 {
+        font-size: 13px;
+    }
+
+    .botaoProximo {
+        width: 100%;
+        text-align: center;
+        padding: 14px;
+    }
+
+    .containerBotao {
+        justify-content: center;
+    }
+}

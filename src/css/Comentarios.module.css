@@ -175,3 +175,40 @@
     max-height: 220px;
     object-fit: contain;
 }
+
+
+@media (max-width: 768px) {
+
+    .secao {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        margin-top: 20px;
+    }
+
+    .caixa_escrever {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 16px;
+    }
+
+    .lista {
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        gap: 12px;
+    }
+
+    .caixa_comentario {
+        padding: 14px;
+    }
+
+    .notas span {
+        font-size: 12px;
+    }
+
+    .botao_publicar {
+        width: 100px;
+        font-size: 14px;
+    }
+}
+

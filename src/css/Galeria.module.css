@@ -259,3 +259,73 @@
     opacity: 0.4;
     cursor: not-allowed;
 }
+
+@media (max-width: 768px) {
+
+    .titulo {
+        font-size: 28px;
+        margin-top: 24px;
+        margin-bottom: 16px;
+    }
+
+    .procurando {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .filtro {
+        gap: 6px;
+    }
+
+    .botao_filtro {
+        padding: 5px 12px;
+        font-size: 13px;
+    }
+
+    .btn_upload {
+        width: 100%;
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .conteiner_produtos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .card_produto {
+        height: 200px;
+    }
+
+    .modal {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .modal_titulo {
+        font-size: 18px;
+    }
+
+    .preview_wrapper {
+        height: 200px;
+    }
+
+    .modal_acoes {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn_cancelar{
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+        font-size: 15px;
+    }
+    .btn_confirmar {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+        font-size: 15px;
+    }
+}

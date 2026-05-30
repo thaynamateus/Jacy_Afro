@@ -29,7 +29,6 @@
   align-items: flex-start;
 }
 
-/* ── Calendário ── */
 .calendario {
   background-color: #ffffff;
   border: 2px solid #eed4a7;
@@ -86,7 +85,6 @@
   cursor: not-allowed;
 }
 
-/* ── Horários ── */
 .gridHorarios {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -118,7 +116,7 @@
   color: #000;
 }
 
-/* ── Barra e botões (igual às outras telas) ── */
+
 .barraPreco {
   background-color: #c4a49c;
   border-radius: 12px;
@@ -132,8 +130,17 @@
   color: white;
 }
 
-.barraPreco h4 { font-size: 18px; margin: 0; font-weight: 400; }
-.barraPreco h5 { font-size: 18px; margin: 0; font-weight: 600; }
+.barraPreco h4 {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 400;
+}
+
+.barraPreco h5 {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 600;
+}
 
 .containerBotoes {
   display: flex;
@@ -153,7 +160,9 @@
   transition: background-color 0.2s ease;
 }
 
-.botaoProximo:hover:not(.botaoDesabilitado) { background-color: #b09189; }
+.botaoProximo:hover:not(.botaoDesabilitado) {
+  background-color: #b09189;
+}
 
 .botaoVoltar {
   background-color: transparent;
@@ -191,4 +200,56 @@
   border-color: #e0a0a0 !important;
   color: #a05050;
   cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+
+    .wrapperPagina {
+        width: 100%;
+        padding: 0 12px;
+        box-sizing: border-box;
+    }
+
+    .containerData {
+        width: 100%;
+        padding: 16px;
+    }
+
+    .conteudo {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .calendario {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .gridHorarios {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .barraPreco {
+        width: 100%;
+        padding: 14px 18px;
+    }
+
+    .barraPreco h4,
+    .barraPreco h5 {
+        font-size: 15px;
+    }
+
+    .containerBotoes {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .botaoProximo,
+    .botaoVoltar {
+        flex: 1;
+        text-align: center;
+        padding: 12px 10px;
+        font-size: 15px;
+    }
 }

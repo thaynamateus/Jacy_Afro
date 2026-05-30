@@ -188,3 +188,87 @@
     height: 100%;
 }
 
+@media (max-width: 768px) {
+
+    .conteiner_banner {
+        margin-top: 20px;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        border: none;
+    }
+
+    .parte1 {
+        width: 100%;
+        gap: 20px;
+        padding: 30px 20px;
+        box-sizing: border-box;
+    }
+
+    .parte1 h1 {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .parte1 h3 {
+        font-size: 9px;
+        width: 100%;
+    }
+
+    .parte1 a {
+        font-size: 8px;
+        width: 80px;
+        height: 16px;
+    }
+
+    .parte2 {
+        width: 100%;
+        height: 250px;
+    }
+
+    /* carrossel */
+    .produtos {
+        margin-top: 20px;
+    }
+
+    .conteiner_produtos img {
+        width: 150px;
+        height: 230px;
+    }
+
+    /* sobre */
+    .sobre {
+        padding: 20px;
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+        border-left: none;
+        border-right: none;
+    }
+
+    .foto {
+        width: 100%;
+        height: 350px;
+        border-radius: 12px;
+    }
+
+    .texto {
+        width: 100%;
+        height: auto;
+        gap: 24px;
+    }
+
+    .texto h2 {
+        font-size: 28px;
+    }
+
+    .texto p {
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .area_rede {
+        width: 100px;
+        height: 50px;
+    }
+}
